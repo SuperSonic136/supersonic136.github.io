@@ -1,0 +1,182 @@
+@font-face {
+    font-family:comicsans ; /* Name your font family */
+    src: url('fonts/comicans/comicsansMS.ttf') format('truetype'); /* Locate the .ttf file within your directory*/
+    src: url('fonts/comicsans/comicsansMS.woff') format('woff');
+}
+
+html {
+  height: 100%;
+}
+
+body {
+    background: #325AAA;
+    background-image: url('cdn/movinbg.svg');
+    will-change:contents;
+    /*animation: moveit 10s linear infinite;*/
+    background-repeat: repeat;
+    width: 960px;
+    height: max-content;
+    margin: auto;
+    padding-bottom: 108px;
+}
+
+#body h1 {
+    font-family:comicsans;
+    font-weight: bolder;
+    color:#000000;
+    text-align: initial;
+}
+
+#body p {
+  font-size:20px;
+  font-family:comicsans;
+  text-align: justify;
+}
+
+#body a {
+    color:#a53a3a;
+    font-size:20px;
+    font-family:comicsans;
+    z-index: 10;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#body a:hover {
+  text-decoration: underline;
+  color:#db5f5f;
+}
+
+.racesire {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  padding: 0px;
+  opacity: 5%;
+}
+
+
+@keyframes moveit {
+  from {background-position: 0px 0px;}
+  to {background-position: 146px 113px;} /* so close..... */
+}
+
+
+@keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
+
+
+#body{
+  position: relative;
+  width: 700px;
+  margin: auto;
+  margin-top: -50px;
+  text-align: center;
+  border-radius: 40px;
+  border-top: 0px solid #cccccc;
+  outline: 6px solid #8a8a8a;; 
+  padding: 30px;
+  padding-bottom: 40px;
+  background: #cccccc;
+  min-height: 400px;
+  height: fit-content;
+  z-index: 1;
+}
+
+.navbar {
+  position: relative;
+  margin-top: -25px;
+  z-index: 4;
+  top: 0;
+
+}
+
+.navbar ul{
+  list-style-type: none;
+  background: linear-gradient(#A5A5A5,#8a8a8a);
+  border:6px solid #646464;;
+  border-top: 0px solid black;
+  padding: -10px;
+  overflow: hidden;
+  height: 43px;
+  margin-left: 80px;
+  margin-right: 80px;
+  display:flex;
+  justify-content: safe center;
+  overflow-x: auto;
+  white-space: nowrap;
+  scrollbar-width:thin;
+  scrollbar-color: #cccccc #00000000;
+}
+
+
+.navbar a{
+  color: #d4d4d4;
+  font-family: 'Impact';
+  text-decoration: none;
+  display: block;
+  font-size: 25px;
+  padding: 5px;
+  padding-left: 45px;
+  padding-right: 45px;
+  padding-top: 7px;
+  text-align: center;
+}
+
+.navbar a:hover{
+  background-color: #bdbdbd;
+  color: #ffffff;
+}
+
+.navbar li{
+  float: left;
+  padding-bottom: 0px;
+  padding: auto;
+}
+
+.navbar ul li {
+  display: flex;
+
+}
+
+.banner {
+  position: relative;
+  z-index: 5;
+  margin: auto;
+  display: block;
+}
+
+.hand {
+  position: relative;
+  z-index: 6;
+  right: -85%;
+  bottom: 20px;
+}
+
+.bgdoodle {
+  height: auto;
+  margin-right: 500px;
+}
+
+#body #centeredtxt {
+  text-align: center;
+}
+
+#body img#linklogo {
+  image-rendering: pixelated;
+  width: 25px;
+  height: auto;
+
+}
+
+
+#body #reallybig {
+  font-size: 40px;
+  font-weight: 900;
+}
