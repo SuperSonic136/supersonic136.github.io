@@ -7,7 +7,7 @@ const navstuffs = [
 const navlinks = [
     "index.html",
     "socials.html",
-    "https://www.youtube.com/@supersonic236_",
+    "mywork.html",
 ];
 
 
