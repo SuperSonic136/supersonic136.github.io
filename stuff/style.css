@@ -161,7 +161,7 @@ body {
 
 .bgdoodle {
   height: auto;
-  margin-right: 500px;
+  margin-right: 5000000px;
 }
 
 #body #centeredtxt {
@@ -183,5 +183,5 @@ body {
 
 #swfcontainer {
   outline: 5px solid black;
-
+  margin-right: 1000000px;
 }

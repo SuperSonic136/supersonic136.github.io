@@ -10,10 +10,8 @@ const navlinks = [
     "mywork.html",
 ];
 
-
-const navbar = document.getElementById('navitem');
-
 function loadnavs(){
+    
     for (i in navstuffs){
         const newnavthing = document.createElement('a');
         newnavthing.href = navlinks[i];
