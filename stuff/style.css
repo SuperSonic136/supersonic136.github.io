@@ -180,3 +180,8 @@ body {
   font-size: 40px;
   font-weight: 900;
 }
+
+#swfcontainer {
+  outline: 5px solid black;
+
+}

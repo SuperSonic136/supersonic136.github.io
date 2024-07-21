@@ -23,3 +23,4 @@ function loadnavs(){
         document.getElementById('navitem').append(listitem);
     }
 }
+
