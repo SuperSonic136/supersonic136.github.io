@@ -25,28 +25,21 @@ function insertAfter(referenceNode, newNode) {
     referenceNode.parentNode.insertBefore(newNode, referenceNode.nextSibling);
 }
 
-function addswf(swf,origele){
-    const swfobj = document.createElement('object')
+function addswf(swf,id){
+    var swfid = 'swfcontainer_' + id
+    if (document.getElementById(swfid) == null){
+    const swfobj = document.createElement("object")
     const swffile = document.createElement('embed')
-    swffile.id = 'swfcontainer'
+    swffile.id = swfid
+    swffile.className = 'swfanim'
     swffile.src = 'stuff/cdn/anims/' + swf
     swffile.width = 427
     swffile.height = 240
     swfobj.appendChild(swffile)
-    document.getElementById('swfplayer').append(swfobj)
+    document.getElementById(id).append(swfobj)
+    }
 }
 
-function makeid(length) {
-    let result = '';
-    const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
-    const charactersLength = characters.length;
-    let counter = 0;
-    while (counter < length) {
-      result += characters.charAt(Math.floor(Math.random() * charactersLength));
-      counter += 1;
-    }
-    return result;
-}
 // use later 
 
 //<object>

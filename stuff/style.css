@@ -188,7 +188,7 @@ body {
   font-weight: 900;
 }
 
-#swfcontainer {
+.swfanim {
   outline: 5px solid rgb(31, 31, 31);
   margin-right: 1000000px;
 }
