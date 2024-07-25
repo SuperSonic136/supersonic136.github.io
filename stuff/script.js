@@ -21,10 +21,6 @@ function loadnavs(){
     }
 }
 
-function insertAfter(referenceNode, newNode) {
-    referenceNode.parentNode.insertBefore(newNode, referenceNode.nextSibling);
-}
-
 function addswf(swf,id){
     var swfid = 'swfcontainer_' + id
     if (document.getElementById(swfid) == null){
