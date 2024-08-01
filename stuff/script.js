@@ -24,15 +24,12 @@ function loadnavs(){
 function addswf(swf,id){
     var swfid = 'swfcontainer_' + id
     if (document.getElementById(swfid) == null){
-        const swfobj = document.createElement("object")
         const swffile = document.createElement('embed')
         swffile.id = swfid
         swffile.className = 'swfanim'
         swffile.src = 'stuff/cdn/anims/' + swf
         swffile.width = 427
         swffile.height = 240
-        swfobj.id = 'swfcontainer'
-        swfobj.appendChild(swffile)
         document.getElementById(id).append(swffile)
     }else{
         document.getElementById(swfid).remove()
