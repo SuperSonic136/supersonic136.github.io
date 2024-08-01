@@ -33,7 +33,9 @@ function addswf(swf,id){
         swffile.height = 240
         swfobj.id = 'swfcontainer'
         swfobj.appendChild(swffile)
-        document.getElementById(id).append(swfobj)
+        document.getElementById(id).append(swffile)
+    }else{
+        document.getElementById(swfid).remove()
     }
 }
 
