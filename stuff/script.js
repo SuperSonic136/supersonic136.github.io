@@ -21,7 +21,8 @@ function loadnavs(){
     }
 }
 
-function addswf(swf,id){
+function addswf(swf){
+    var id = swf.split('.')[0]
     var swfid = 'swfcontainer_' + id
     if (document.getElementById(swfid) == null){
         const swffile = document.createElement('embed')
