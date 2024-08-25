@@ -184,6 +184,6 @@ body {
 }
 
 .swfanim {
+  display: flex;
   outline: 5px solid rgb(31, 31, 31);
-  margin-right: 1000000px;
 }
