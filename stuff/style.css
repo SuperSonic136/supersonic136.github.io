@@ -121,11 +121,11 @@ body {
 
 
 .navbar a{
-  color: #d4d4d4;
+  color: #e0e0e0;
   font-family: 'Impact';
   text-decoration: none;
   display: block;
-  font-size: 25px;
+  font-size: 27px;
   padding: 5px;
   padding-left: 45px;
   padding-right: 45px;
@@ -177,7 +177,6 @@ body {
   width: 25px;
   height: auto;
 }
-
 
 #body #reallybig {
   font-size: 40px;
