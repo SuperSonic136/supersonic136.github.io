@@ -5,9 +5,9 @@ const navstuffs = [
 ];
 
 const navlinks = [
-    "index.html",
-    "socials.html",
-    "mywork.html",
+    "/",
+    "/socials",
+    "/mywork",
 ];
 
 function loadnavs(){
