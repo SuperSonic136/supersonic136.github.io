@@ -8,7 +8,7 @@ body {
     background: #325AAA;
     background-image: url('cdn/movinbg.svg');
     will-change:contents;
-    /*animation: moveit 10s linear infinite;*/
+    animation: moveit 10s linear infinite;
     background-repeat: repeat;
     width: 960px;
     height: max-content;
