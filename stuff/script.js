@@ -25,12 +25,14 @@ function addswf(swf){
     var id = swf.split('.')[0]
     var swfid = 'swfcontainer_' + id
     if (document.getElementById(swfid) == null){
-        const swffile = document.createElement('embed')
+        const swffile = document.createElement('video')
         swffile.id = swfid
         swffile.className = 'swfanim'
         swffile.src = 'stuff/cdn/anims/' + swf
         swffile.width = 427
         swffile.height = 240
+        swffile.play()
+        swffile.setAttribute("controls","controls")
         document.getElementById(id).append(swffile)
     }else{
         document.getElementById(swfid).remove()
