@@ -1,7 +1,7 @@
 const navstuffs = [
     'Home',
     'Links',
-    'My Work',
+    'My Animations',
 ];
 
 const navlinks = [
