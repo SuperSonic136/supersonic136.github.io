@@ -187,4 +187,14 @@ body {
 .swfanim {
   display: flex;
   outline: 5px solid #12274b;
+  margin: 10px;
+}
+
+.ytlogo {
+  padding: 10px;
+}
+
+.videolink {
+  text-align: left;
+  padding-top: 20px;
 }
