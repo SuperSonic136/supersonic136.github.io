@@ -52,5 +52,5 @@ function addswf(swf){
 
 //<object>
 //  <embed id="swfcontainer" src="sus.swf" width="427" height="240" />
-//</object>
+//</object
 
