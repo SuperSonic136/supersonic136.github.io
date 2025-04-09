@@ -47,7 +47,6 @@ function addswf(swf,date){
         d.textContent = "Uploaded "+date
         d.id = 'littledate'+id
         d.style = "color:rgb(80, 80, 80); font-size: smaller; font-style: italic; padding-left: 7px;"
-        console.log(d)
         document.getElementById(id).append(d)
     }else{
         document.getElementById(swfid).remove()
