@@ -1,3 +1,12 @@
+function getcats(){
+    link = "stuff/cdn/funnycats/"+Math.round(Math.random()*6)+".jpg"
+    console.log(link)
+    a = document.createElement('img')
+    a.src = link
+    a.style = "width: 45%; height: auto; text-align: left;"
+    document.getElementById('body').append(a)
+}
+
 const navstuffs = [
     'Home',
     'Links',
@@ -44,3 +53,4 @@ function addswf(swf){
 //<object>
 //  <embed id="swfcontainer" src="sus.swf" width="427" height="240" />
 //</object>
+

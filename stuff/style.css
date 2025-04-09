@@ -11,10 +11,11 @@ body {
     animation: moveit 10s linear infinite;
     background-repeat: repeat;
     width: 960px;
-    height: max-content;
+    height: calc((bottom)-36px);
     margin: auto;
-    padding-bottom: 108px;
+    padding-bottom: 0px;
     overflow-x: hidden;
+    z-index: 0;
 }
 
 #body h1 {
@@ -57,6 +58,7 @@ body {
   right: 0;
   padding: 0px;
   opacity: 5%;
+  z-index: 1;
 }
 
 
@@ -77,6 +79,7 @@ body {
 
 
 #body{
+
   position: relative;
   width: 700px;
   margin: auto;
@@ -89,8 +92,8 @@ body {
   padding: 30px;
   padding-bottom: 40px;
   background: #cccccc;
-  min-height: 400px;
-  height: fit-content;
+  max-height: 550px;
+  height: 6in;
   z-index: 1;
 }
 
