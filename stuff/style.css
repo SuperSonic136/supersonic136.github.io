@@ -92,7 +92,8 @@ body {
   padding: 30px;
   padding-bottom: 40px;
   background: #cccccc;
-  height: 6in;
+  height: max-content;
+
   z-index: 1;
 }
 
@@ -199,4 +200,6 @@ body {
 .videolink {
   text-align: left;
   padding-top: 20px;
+  
 }
+

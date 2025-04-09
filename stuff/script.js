@@ -30,7 +30,7 @@ function loadnavs(){
     }
 }
 
-function addswf(swf){
+function addswf(swf,date){
     var id = swf.split('.')[0]
     var swfid = 'swfcontainer_' + id
     if (document.getElementById(swfid) == null){
@@ -43,8 +43,15 @@ function addswf(swf){
         swffile.play()
         swffile.setAttribute("controls","controls")
         document.getElementById(id).append(swffile)
+        d = document.createElement("p")
+        d.textContent = "Uploaded "+date
+        d.id = 'littledate'+id
+        d.style = "color:rgb(80, 80, 80); font-size: smaller; font-style: italic; padding-left: 7px;"
+        console.log(d)
+        document.getElementById(id).append(d)
     }else{
         document.getElementById(swfid).remove()
+        document.getElementById("littledate"+id).remove()
     }
 }
 
