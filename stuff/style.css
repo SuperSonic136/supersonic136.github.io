@@ -31,7 +31,6 @@ body {
     will-change:contents;
     animation: moveit 10s linear infinite;
     background-repeat: repeat;
-    width: 960px;
     height: calc((bottom)-36px);
     margin: auto;
     padding-bottom: 0px;
@@ -85,7 +84,7 @@ body {
 
 @keyframes moveit {
   from {background-position: 0px 0px;}
-  to {background-position: 146px 113px;} /* so close..... */
+  to {background-position: 140px 110px;} /* so close..... */
 }
 
 
@@ -120,16 +119,17 @@ body {
 
 .navbar {
   position: relative;
+  margin: auto;
   margin-top: -25px;
   z-index: 4;
   top: 0;
-
+  width: 960px;
 }
 
 .navbar ul{
   list-style-type: none;
   background: linear-gradient(#A5A5A5,#8a8a8a);
-  border:6px solid #646464;;
+  border:6px solid #646464;
   border-top: 0px solid black;
   padding: -10px;
   overflow: hidden;
@@ -151,15 +151,15 @@ body {
   text-decoration: none;
   display: block;
   font-size: 27px;
-  padding: 5px;
+  padding: 7px;
   padding-left: 45px;
   padding-right: 45px;
-  padding-top: 7px;
   text-align: center;
+  border-radius: 2px;
 }
 
 .navbar a:hover{
-  background-color: #bdbdbd;
+  background-color: #b6b6b6;
   color: #ffffff;
 }
 
