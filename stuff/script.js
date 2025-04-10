@@ -1,5 +1,5 @@
 function getcats(){
-    link = "stuff/cdn/funnycats/"+Math.round(Math.random()*6)+".jpg"
+    link = "stuff/cdn/funnycats/"+Math.round(Math.random()*7)+".jpg"
     console.log(link)
     a = document.createElement('img')
     a.src = link
