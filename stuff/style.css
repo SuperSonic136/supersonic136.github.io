@@ -3,6 +3,27 @@
     src: url('fonts/comicans/comicsansMS.ttf') format('truetype'); /* Locate the .ttf file within your directory*/
     src: url('fonts/comicsans/comicsansMS.woff') format('woff');
 }
+@font-face {
+    font-family:oldtwitter ; /* Name your font family */
+    src: url('fonts/oldtwitter/pico.ttf') format('truetype'); /* Locate the .ttf file within your directory*/
+}
+@font-face {
+  font-family:scratchfont ; /* Name your font family */
+  src: url('fonts/scratchfont/scratchfont.ttf') format('truetype'); /* Locate the .ttf file within your directory*/
+}
+@font-face {
+  font-family:tumblrfont ; /* Name your font family */
+  src: url('fonts/tumblrfont/tumblr.ttf') format('truetype'); /* Locate the .ttf file within your directory*/
+}
+@font-face {
+  font-family:vanillo ; /* Name your font family */
+  src: url('fonts/blephinblephinblephin/vanillo.ttf') format('truetype'); /* Locate the .ttf file within your directory*/
+}
+@font-face {
+  font-family:YT ; /* Name your font family */
+  src: url('fonts/YT/yt.otf') format('truetype'); /* Locate the .ttf file within your directory*/
+}
+
 
 body {
     background: #325AAA;
@@ -200,6 +221,121 @@ body {
 .videolink {
   text-align: left;
   padding-top: 20px;
+}
+
+#thisisonlyforblips {
+  text-shadow: 0 0 4px white,
+  0 0 4px white,
+  0 0 4px white,
+  0 0 4px white,
+  0 0 4px white,
+  0 0 4px white,
+  0 0 4px white,
+  0 0 4px white,
+  0 0 4px white,
+  0 0 4px white,
+  0 0 4px white,
+  0 0 4px white,
+  0 0 4px white,
+  0 0 4px white,
+  0 0 4px white,
+  0 0 4px white,
+  0 0 4px white,
+  0 0 4px white,
+  0 0 4px white,
+  0 0 4px white,
+  0 0 4px white,
+  0 0 4px white,
+  0 0 4px white,
+  0 0 4px white,
+  0 0 4px white,
+  0 0 4px white,
+  0 0 4px white,
+  0 0 4px white,
+  0 0 4px white,
+  0 0 4px white,
+  0 0 4px white,
+  0 0 4px white,
+  0 0 4px white,
+  0 0 4px white,
+  0 0 4px white,
+  0 0 4px white,
+  0 0 4px white,
+  0 0 4px white,
+  0 0 4px white,
+  0 0 4px white,
+  0 0 4px white,
+  0 0 4px white,
+  0 0 4px white,
+  0 0 4px white,
+  0 0 4px white,
+  0 0 4px white,
+  0 0 4px white,
+  0 0 4px white,
+  0 0 4px white,
+  0 0 4px white,
+  0 0 4px white,
+  0 0 4px white,
+  0 0 4px white,
+  0 0 4px white,
+  0 0 4px white,
+  0 0 4px white,
+  0 0 4px white,
+  0 0 4px white,
+  0 0 4px white,
+  0 0 4px white,
+  0 0 4px white,
+  0 0 4px white,
+  0 0 4px white,
+  0 0 4px white,
+  0 0 4px white,
+  0 0 4px white,
+  0 0 4px white,
+  0 0 4px white,
+  0 0 4px white,
+  0 0 4px white,
+  0 0 4px white,
+  0 0 4px white,
+  0 0 4px white,
+  0 0 4px white,
+  0 0 4px white,
+  0 0 4px white,
+  0 0 4px white,
+  0 0 4px white,
+  0 0 4px white,
+  0 0 4px white,
+  0 0 4px white,
+  0 0 4px white,
+  0 0 4px white,
+  0 0 4px white,
+  0 0 4px white,
+  0 0 4px white,
+  0 0 4px white,
+  0 0 4px white,
+  0 0 4px white,
+  0 0 4px white,
+  0 0 4px white,
+  0 0 4px white,
+  0 0 4px white,
+  0 0 4px white,
+  0 0 4px white,
+  0 0 4px white,
+  0 0 4px white,
+  0 0 4px white,
+  0 0 4px white,
+  0 0 4px white,
+  0 0 4px white,
+  0 0 4px white,
+  0 0 4px white,
+  0 0 4px white,
+  0 0 4px white,
+  0 0 4px white,
+  0 0 4px white,
+  0 0 4px white,
+  0 0 4px white,
+  0 0 4px white,
+  0 0 4px white,
+  0 0 4px white;
   
 }
 
