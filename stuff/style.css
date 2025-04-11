@@ -24,15 +24,19 @@
   src: url('fonts/YT/yt.otf') format('truetype'); /* Locate the .ttf file within your directory*/
 }
 
+.everything {
+  margin: auto;
+  width: fit-content;
+  display: grid;
+  place-items: center;
+}
 
 body {
-    background: #325AAA;
+    background: #325aaa; /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     background-image: url('cdn/movinbg.svg');
     will-change:contents;
     animation: moveit 10s linear infinite;
     background-repeat: repeat;
-
-    margin: auto;
     padding-bottom: 0px;
     overflow-x: hidden;
     z-index: 0;
@@ -101,7 +105,6 @@ body {
 #body{
   position: relative;
   width: 700px;
-  margin: auto;
   margin-top: -50px;
   text-align: center;
   border-radius: 40px;
@@ -112,13 +115,11 @@ body {
   padding-bottom: 40px;
   background: #cccccc;
   height: max-content;
-
   z-index: 1;
 }
 
 .navbar {
   position: relative;
-  margin: auto;
   margin-top: -25px;
   z-index: 4;
   top: 0;
@@ -127,7 +128,7 @@ body {
 
 .navbar ul{
   list-style-type: none;
-  background: linear-gradient(#A5A5A5,#8a8a8a);
+  background: linear-gradient(#A5A5A5 0%,#8a8a8a 50%);
   border:6px solid #646464;
   border-top: 0px solid black;
   padding: -10px;
@@ -176,7 +177,7 @@ body {
 .banner {
   position: relative;
   z-index: 5;
-  margin: auto;
+
   display: block;
 }
 
