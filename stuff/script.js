@@ -83,3 +83,30 @@ function addswf(swf,date){
 //  <embed id="swfcontainer" src="sus.swf" width="427" height="240" />
 //</object
 
+class vanillologo extends HTMLElement {
+    constructor() {
+      super();
+    }
+    // Element functionality written in here
+    connectedCallback() {
+        this.innerHTML = `<a target="_blank" rel="noopener noreferrer" href="`+this.getAttribute("data-link")+`" class="ytlogo"><img style="width: 25px" src="stuff/cdn/vanillo.svg" alt="Vanillo Version"></a>`
+        console.log(this.innerHTML)
+    
+    }
+  }
+  
+customElements.define("vanillo-logo", vanillologo);
+
+class ytlogo extends HTMLElement {
+    constructor() {
+      super();
+    }
+    // Element functionality written in here
+    connectedCallback() {
+        this.innerHTML = `<a target="_blank" rel="noopener noreferrer" href="`+this.getAttribute("data-link")+`" class="ytlogo"><img style="width: 35px" src="stuff/cdn/youtube.png" alt="Youtube Version"></a>`
+        console.log(this.innerHTML)
+    
+    }
+  }
+  
+customElements.define("yt-logo", ytlogo);
