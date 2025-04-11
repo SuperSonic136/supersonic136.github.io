@@ -31,9 +31,14 @@
   place-items: center; /* center everything... yes */
 }
 
+.baner {
+  display: inherit; 
+  place-items: inherit;
+}
+
 body {
     background: #325aaa; /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    background-image: url('cdn/movinbg.png');
+    background-image: url("cdn/movinbg.png");
     will-change:contents;
     animation: moveit 10s linear infinite;
     background-repeat: repeat;

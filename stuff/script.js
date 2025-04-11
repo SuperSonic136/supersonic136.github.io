@@ -1,37 +1,8 @@
-function svgasimg() {
-    return document.implementation.hasFeature(
-      "http://www.w3.org/TR/SVG11/feature#Image", "1.1");
-  }
-  
-  if (!svgasimg()){
-    var e = document.getElementsByTagName("img");
-    if (!e.length){
-      e = document.getElementsByTagName("IMG");
-    }
-    for (var i=0, n=e.length; i<n; i++){
-      var img = e[i],
-          src = img.getAttribute("src");
-      if (src.match(/svgz?$/)) {
-        /* URL ends in svg or svgz */
-        img.setAttribute("src", 
-               img.getAttribute("data-fallback"));
-      }
-    }    
-  }
-
-function getcats(){
-    link = "stuff/cdn/funnycats/"+Math.round(Math.random()*7)+".jpg"
-    console.log(link)
-    a = document.createElement('img')
-    a.src = link
-    a.style = "width: 45%; height: auto; text-align: left; border-radius: 10px;"
-    document.getElementById('body').append(a)
-}
-
 const navstuffs = [
     'Home',
     'Links',
     'My Animations',
+    "Characters"
 ];
 
 const navlinks = [
@@ -41,15 +12,42 @@ const navlinks = [
 ];
 
 function loadnavs(){
+    var baner = document.createElement("div")
+    baner.className = "baner"
+    var realnoscambanner = document.createElement('img')
+    realnoscambanner.src = "stuff/cdn/banner.svg"
+    realnoscambanner.className = "banner"
+
+    var navbar = document.createElement('nav')
+    navbar.className = 'navbar'
+    var navitems = document.createElement('ul')
+    navitems.id = "navitem"
     for (i in navstuffs){
         const newnavthing = document.createElement('a');
         newnavthing.href = navlinks[i];
         newnavthing.textContent = navstuffs[i];
         listitem = document.createElement('li');
         listitem.appendChild(newnavthing);
-        document.getElementById('navitem').append(listitem);
+        navitems.append(listitem);
     }
+    baner.appendChild(realnoscambanner)
+    navbar.append(navitems)
+    baner.appendChild(navbar)
+    
+    document.getElementsByClassName('everything')[0].prepend(baner)
 }
+
+    
+function getcats(){
+    link = "stuff/cdn/funnycats/"+Math.round(Math.random()*7)+".jpg"
+    console.log(link)
+    a = document.createElement('img')
+    a.src = link
+    a.style = "width: 45%; height: auto; text-align: left; border-radius: 10px;"
+    document.getElementById('body').append(a)
+}
+//getElementById('navitem')
+
 
 function addswf(swf,date){
     var id = swf.split('.')[0]
