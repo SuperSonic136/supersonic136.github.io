@@ -28,7 +28,7 @@
   margin: auto;
   width: fit-content;
   display: grid;
-  place-items: center;
+  place-items: center; /* center everything... yes */
 }
 
 body {
