@@ -90,7 +90,6 @@ class vanillologo extends HTMLElement {
     // Element functionality written in here
     connectedCallback() {
         this.innerHTML = `<a target="_blank" rel="noopener noreferrer" href="`+this.getAttribute("data-link")+`" class="ytlogo"><img style="width: 25px" src="stuff/cdn/vanillo.svg" alt="Vanillo Version"></a>`
-        console.log(this.innerHTML)
     
     }
   }
@@ -104,7 +103,6 @@ class ytlogo extends HTMLElement {
     // Element functionality written in here
     connectedCallback() {
         this.innerHTML = `<a target="_blank" rel="noopener noreferrer" href="`+this.getAttribute("data-link")+`" class="ytlogo"><img style="width: 35px" src="stuff/cdn/youtube.png" alt="Youtube Version"></a>`
-        console.log(this.innerHTML)
     
     }
   }
