@@ -2,7 +2,6 @@ const navstuffs = [
     'Home',
     'Links',
     'My Animations',
-    "Characters"
 ];
 
 const navlinks = [
