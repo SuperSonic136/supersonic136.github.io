@@ -16,6 +16,7 @@ function loadnavs(){
     var realnoscambanner = document.createElement('img')
     realnoscambanner.src = "stuff/cdn/banner.svg"
     realnoscambanner.className = "banner"
+
     var navbar = document.createElement('nav')
     navbar.className = 'navbar'
     var navitems = document.createElement('ul')
@@ -29,10 +30,11 @@ function loadnavs(){
         listitem.appendChild(newnavthing);
         navitems.append(listitem);
     }
+    
     baner.appendChild(realnoscambanner)
     navbar.append(navitems)
     baner.appendChild(navbar)
-    
+
     document.getElementsByClassName('everything')[0].prepend(baner)
 }
 

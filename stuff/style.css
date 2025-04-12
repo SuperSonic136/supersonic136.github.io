@@ -348,6 +348,11 @@ body {
   
 }
 
-#player {
-
+#card {
+  border-radius: 10px;
+  width: 250px;
+  text-align: left;
+  height: auto;
+  border: 3px solid black;
 }
+
