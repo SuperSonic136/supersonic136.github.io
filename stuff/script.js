@@ -2,7 +2,7 @@ const navstuffs = [
     'Home',
     'Links',
     'My Animations',
-];
+];  
 
 const navlinks = [
     "/",
@@ -16,11 +16,11 @@ function loadnavs(){
     var realnoscambanner = document.createElement('img')
     realnoscambanner.src = "stuff/cdn/banner.svg"
     realnoscambanner.className = "banner"
-
     var navbar = document.createElement('nav')
     navbar.className = 'navbar'
     var navitems = document.createElement('ul')
     navitems.id = "navitem"
+
     for (i in navstuffs){
         const newnavthing = document.createElement('a');
         newnavthing.href = navlinks[i];
@@ -36,7 +36,6 @@ function loadnavs(){
     document.getElementsByClassName('everything')[0].prepend(baner)
 }
 
-    
 function getcats(){
     link = "stuff/cdn/funnycats/"+Math.round(Math.random()*7)+".jpg"
     console.log(link)
@@ -89,7 +88,7 @@ class vanillologo extends HTMLElement {
     }
     // Element functionality written in here
     connectedCallback() {
-        this.innerHTML = `<a target="_blank" rel="noopener noreferrer" href="`+this.getAttribute("data-link")+`" class="ytlogo"><img style="width: 25px" src="stuff/cdn/vanillo.svg" alt="Vanillo Version"></a>`
+        this.innerHTML = `<a target="_blank" rel="noopener noreferrer" href="`+this.getAttribute("data-link")+`" class="ytlogo"><img style="width: 25px;" src="stuff/cdn/vanillo.svg" alt="Vanillo Version"></a>`
     
     }
   }

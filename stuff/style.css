@@ -223,7 +223,8 @@ body {
 }
 
 .ytlogo {
-  padding: 10px;
+  padding: 5px;
+  vertical-align: middle;
 }
 
 .videolink {
@@ -347,3 +348,6 @@ body {
   
 }
 
+#player {
+
+}
