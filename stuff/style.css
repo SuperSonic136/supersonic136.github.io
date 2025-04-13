@@ -120,7 +120,6 @@ body {
   outline: 6px solid #8a8a8a;; 
   padding: 30px;
   padding-bottom: 40px;
-
   background: #cccccc;
   height: max-content;
   z-index: 1;
@@ -353,6 +352,7 @@ body {
   width: 250px;
   text-align: left;
   height: auto;
-  border: 3px solid black;
+  margin: 30px;
+  
 }
 

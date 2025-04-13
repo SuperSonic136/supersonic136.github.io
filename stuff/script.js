@@ -1,7 +1,7 @@
 const navstuffs = [
     'Home',
     'Links',
-    'My Animations',
+    'My Stuff',
 ];  
 
 const navlinks = [
@@ -14,7 +14,7 @@ function loadnavs(){
     var baner = document.createElement("div")
     baner.className = "baner"
     var realnoscambanner = document.createElement('img')
-    realnoscambanner.src = "stuff/cdn/banner.svg"
+    realnoscambanner.src = "/stuff/cdn/banner.svg"
     realnoscambanner.className = "banner"
 
     var navbar = document.createElement('nav')
@@ -38,8 +38,28 @@ function loadnavs(){
     document.getElementsByClassName('everything')[0].prepend(baner)
 }
 
+function fivehundreddihhs() {
+    let dih = Math.round(Math.random())*2
+    if (dih == 1) {
+        const d = document.createElement('div')
+        d.innerHTML = `<a href="dih"><img src="/stuff/cdn/cards/hmm.png" style="border: 3px solid black;" id="card" alt="Coming Soon..."></a>`
+    }
+ }
+
+ function ahahah() {
+    const stewie = document.createElement('video')
+    stewie.setAttribute('loop','true')
+    stewie.setAttribute('autoplay','true')
+    stewie.play()
+    stewie.src = "/stuff/cdn/sewie.mp4"
+    stewie.width = 350
+    
+    document.body.append(stewie)
+    
+ }
+
 function getcats(){
-    link = "stuff/cdn/funnycats/"+Math.round(Math.random()*7)+".jpg"
+    link = "/stuff/cdn/funnycats/"+Math.round(Math.random()*7)+".jpg"
     console.log(link)
     a = document.createElement('img')
     a.src = link
@@ -59,7 +79,7 @@ function addswf(swf,date){
         const swffile = document.createElement('video')
         swffile.id = swfid
         swffile.className = 'swfanim'
-        swffile.src = 'stuff/cdn/anims/' + swf
+        swffile.src = '/stuff/cdn/anims/' + swf
         swffile.width = 427
         swffile.height = 240
         swffile.volume = 0.2
@@ -90,7 +110,7 @@ class vanillologo extends HTMLElement {
     }
     // Element functionality written in here
     connectedCallback() {
-        this.innerHTML = `<a target="_blank" rel="noopener noreferrer" href="`+this.getAttribute("data-link")+`" class="ytlogo"><img style="width: 25px;" src="stuff/cdn/vanillo.svg" alt="Vanillo Version"></a>`
+        this.innerHTML = `<a target="_blank" rel="noopener noreferrer" href="`+this.getAttribute("data-link")+`" class="ytlogo"><img style="width: 25px;" src="/stuff/cdn/vanillo.svg" alt="Vanillo Version"></a>`
     
     }
   }
@@ -103,7 +123,7 @@ class ytlogo extends HTMLElement {
     }
     // Element functionality written in here
     connectedCallback() {
-        this.innerHTML = `<a target="_blank" rel="noopener noreferrer" href="`+this.getAttribute("data-link")+`" class="ytlogo"><img style="width: 35px" src="stuff/cdn/youtube.png" alt="Youtube Version"></a>`
+        this.innerHTML = `<a target="_blank" rel="noopener noreferrer" href="`+this.getAttribute("data-link")+`" class="ytlogo"><img style="width: 35px" src="/stuff/cdn/youtube.png" alt="Youtube Version"></a>`
     
     }
   }
