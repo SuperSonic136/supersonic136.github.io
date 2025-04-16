@@ -39,7 +39,7 @@ function loadnavs(){
 }
 
 function fivehundreddihhs() {
-    let dih = Math.round(Math.random())*2
+    let dih = Math.round(Math.random()*2)
     if (Math.round(dih) == 1) {
         const d = document.createElement('div')
         d.innerHTML = `<a href="dih"><img src="/stuff/cdn/cards/hmm.png" style="border: 3px solid black;" id="card" alt="Coming Soon..."></a>`
