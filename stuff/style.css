@@ -1,8 +1,9 @@
+
 @font-face {
-    font-family:comicsans ; /* Name your font family */
-    src: url('fonts/comicans/comicsansMS.ttf') format('truetype'); /* Locate the .ttf file within your directory*/
-    src: url('fonts/comicsans/comicsansMS.woff') format('woff');
+  font-family:jibgurt ; /* Name your font family */
+  src: url('fonts/jibgurt/Jibgurt.ttf') format('truetype'); /* Locate the .ttf file within your directory*/
 }
+
 @font-face {
     font-family:oldtwitter ; /* Name your font family */
     src: url('fonts/oldtwitter/pico.ttf') format('truetype'); /* Locate the .ttf file within your directory*/
@@ -52,14 +53,14 @@ body {
 
 
 #body h1 {
-    font-family:comicsans;
+    font-family:jibgurt;
     font-weight: bolder;
     color:#000000;
     text-align: initial;
 }
 
 #body h2 {
-  font-family:comicsans;
+  font-family:jibgurt;
   font-weight: bold;
   color:#000000;
   text-align: initial;
@@ -67,7 +68,7 @@ body {
 
 #body p {
   font-size:20px;
-  font-family:comicsans;
+  font-family:jibgurt;
   text-align: justify;
 }
 
