@@ -368,7 +368,7 @@ body {
   margin: auto;
   background-color: rgb(255, 235, 56);
   outline: 4px solid black;
-  
+  z-index: 10;
 }
 .headertext {
   font-family: jibgurt;

@@ -33,7 +33,7 @@ function repeattextalot(txt,txtwidth) {
 }
 
 function loadnavs(){
-    //addbigassbar('hello')
+    addbigassbar('hello')
 
     var baner = document.createElement("div")
     baner.className = "baner"
