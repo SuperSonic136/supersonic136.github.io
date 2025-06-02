@@ -361,36 +361,36 @@ body {
   
 }
 
-@keyframes hello {
-  0% {
-    transform: translateX(100vw);
-  }
-  100% {
-    transform: translateX(-100vw);
-  }
-}
+
 
 .headerbar {
   overflow: hidden;
-  
   margin: auto;
-  background-color: yellow;
-
-  padding: 5px;
+  background-color: rgb(255, 235, 56);
   outline: 4px solid black;
   
 }
 .headertext {
-  text-transform: uppercase;
   font-family: jibgurt;
   font-size: large;
-  animation: hello 10s linear infinite;
-  text-align: left;
 }
 
-.headertext span {
-  
+
+.marquee {
+  line-height: 1px;
+  color: rgb(0, 0, 0);
   white-space: nowrap;
-  display: block;
-  text-overflow: ellipsis;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+.marquee p {
+  text-transform: uppercase;
+  font-family: jibgurt;
+  display: inline-block;
+  padding-left: 100%;
+  animation: marquee 40s linear infinite;
+}
+@keyframes marquee {
+  0%   { transform: translate(0, 0); }
+  100% { transform: translate(-100%, 0); }
 }

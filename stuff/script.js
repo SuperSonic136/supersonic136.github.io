@@ -15,15 +15,26 @@ function addbigassbar(text) {
     var bar = document.createElement('div')
     bar.className = 'headerbar'
     var htxt = document.createElement('div')
-    htxt.className = "headertext"
-    var txt = document.createElement('span')
+    htxt.className = "marquee"
+    var txt = document.createElement('p')
     txt.innerText = text
     htxt.append(txt)
     bar.append(htxt)
     
     document.body.prepend(bar)
 }
+
+function repeattextalot(txt,txtwidth) {
+    let t = ""
+    for (let i = 0; i<txtwidth/txt.length; i++) {
+        t = t+" "+txt
+    }
+    return t
+}
+
 function loadnavs(){
+    //addbigassbar('hello')
+
     var baner = document.createElement("div")
     baner.className = "baner"
     var realnoscambanner = document.createElement('img')
