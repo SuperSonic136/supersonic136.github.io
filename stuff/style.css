@@ -25,6 +25,7 @@
   src: url('fonts/YT/yt.otf') format('truetype'); /* Locate the .ttf file within your directory*/
 }
 
+
 .everything {
   margin: auto;
   width: min-content;
@@ -360,3 +361,36 @@ body {
   
 }
 
+@keyframes hello {
+  0% {
+    transform: translateX(100vw);
+  }
+  100% {
+    transform: translateX(-100vw);
+  }
+}
+
+.headerbar {
+  overflow: hidden;
+  
+  margin: auto;
+  background-color: yellow;
+
+  padding: 5px;
+  outline: 4px solid black;
+  
+}
+.headertext {
+  text-transform: uppercase;
+  font-family: jibgurt;
+  font-size: large;
+  animation: hello 10s linear infinite;
+  text-align: left;
+}
+
+.headertext span {
+  
+  white-space: nowrap;
+  display: block;
+  text-overflow: ellipsis;
+}

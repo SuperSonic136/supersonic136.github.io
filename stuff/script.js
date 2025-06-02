@@ -10,6 +10,19 @@ const navlinks = [
     "/mywork",
 ];
 
+function addbigassbar(text) {
+    var r = document.querySelector(':root')
+    var bar = document.createElement('div')
+    bar.className = 'headerbar'
+    var htxt = document.createElement('div')
+    htxt.className = "headertext"
+    var txt = document.createElement('span')
+    txt.innerText = text
+    htxt.append(txt)
+    bar.append(htxt)
+    
+    document.body.prepend(bar)
+}
 function loadnavs(){
     var baner = document.createElement("div")
     baner.className = "baner"
