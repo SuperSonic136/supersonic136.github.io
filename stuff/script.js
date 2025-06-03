@@ -12,12 +12,16 @@ const navlinks = [
 
 function addbigassbar(text) {
     var r = document.querySelector(':root')
+
     var bar = document.createElement('div')
     bar.className = 'headerbar'
+
     var htxt = document.createElement('div')
     htxt.className = "marquee"
+
     var txt = document.createElement('p')
     txt.innerText = text
+
     htxt.append(txt)
     bar.append(htxt)
     
@@ -32,20 +36,25 @@ function repeattextalot(txt,txtwidth) {
     return t
 }
 
+
+
 function loadnavs(){
     addbigassbar('hello')
 
+    //creates the banner image
     var baner = document.createElement("div")
     baner.className = "baner"
     var realnoscambanner = document.createElement('img')
     realnoscambanner.src = "/stuff/cdn/banner.svg"
     realnoscambanner.className = "banner"
 
+    //create navbar
     var navbar = document.createElement('nav')
     navbar.className = 'navbar'
     var navitems = document.createElement('ul')
     navitems.id = "navitem"
 
+    //create navitems
     for (i in navstuffs){
         const newnavthing = document.createElement('a');
         newnavthing.href = navlinks[i];
@@ -55,10 +64,10 @@ function loadnavs(){
         navitems.append(listitem);
     }
     
+    //add everything..?
     baner.appendChild(realnoscambanner)
     navbar.append(navitems)
     baner.appendChild(navbar)
-
     document.getElementsByClassName('everything')[0].prepend(baner)
 }
 
@@ -85,7 +94,7 @@ function getcats(){
     a = document.createElement('img')
     a.src = link
     a.style = "width: 45%; height: auto; text-align: left; border-radius: 10px;"
-    document.getElementById('body').append(a)
+    document.getElementsByClassName('body')[0].append(a)
 }
 //getElementById('navitem')
 

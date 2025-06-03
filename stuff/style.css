@@ -53,27 +53,27 @@ body {
 
 
 
-#body h1 {
+.body h1 {
     font-family:jibgurt;
     font-weight: bolder;
     color:#000000;
     text-align: initial;
 }
 
-#body h2 {
+.body h2 {
   font-family:jibgurt;
   font-weight: bold;
   color:#000000;
   text-align: initial;
 }
 
-#body p {
+.body p {
   font-size:20px;
   font-family:jibgurt;
   text-align: justify;
 }
 
-#body a {
+.body a {
     color:#a53a3a;
     font-size:20px;
     font-family:comicsans;
@@ -82,7 +82,7 @@ body {
     font-weight: bold;
 }
 
-#body a:hover {
+.body a:hover {
   text-decoration: underline;
   color:#db5f5f;
 }
@@ -113,7 +113,8 @@ body {
   }
 
 
-#body{
+.body{
+  font-family: jibgurt;
   position: relative;
   width: 700px;
   margin-top: -50px;
@@ -205,17 +206,17 @@ body {
   margin-right: 5000000px;
 }
 
-#body #centeredtxt {
+.body #centeredtxt {
   text-align: center;
 }
 
-#body img#linklogo {
+.body img#linklogo {
   image-rendering: pixelated;
   width: 25px;
   height: auto;
 }
 
-#body #reallybig {
+.body #reallybig {
   font-size: 40px;
   font-weight: 900;
 }
@@ -361,13 +362,11 @@ body {
   
 }
 
-
-
 .headerbar {
   overflow: hidden;
   margin: auto;
   background-color: rgb(255, 235, 56);
-  outline: 4px solid black;
+  outline: 4px solid rgb(83, 50, 0);
   z-index: 10;
 }
 .headertext {
@@ -375,9 +374,8 @@ body {
   font-size: large;
 }
 
-
 .marquee {
-  line-height: 1px;
+  line-height: 0px;
   color: rgb(0, 0, 0);
   white-space: nowrap;
   overflow: hidden;
@@ -390,6 +388,7 @@ body {
   padding-left: 100%;
   animation: marquee 40s linear infinite;
 }
+
 @keyframes marquee {
   0%   { transform: translate(0, 0); }
   100% { transform: translate(-100%, 0); }
