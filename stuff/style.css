@@ -67,6 +67,10 @@ body {
   text-align: initial;
 }
 
+p {
+  font-family:jibgurt
+}
+
 .body p {
   font-size:20px;
   font-family:jibgurt;
@@ -76,7 +80,7 @@ body {
 .body a {
     color:#a53a3a;
     font-size:20px;
-    font-family:comicsans;
+    font-family:jibgurt;
     z-index: 10;
     text-decoration: none;
     font-weight: bold;
