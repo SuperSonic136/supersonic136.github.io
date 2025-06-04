@@ -39,7 +39,6 @@ function repeattextalot(txt,txtwidth) {
 
 
 function loadnavs(){
-
     //creates the banner image
     var baner = document.createElement("div")
     baner.className = "baner"
@@ -69,11 +68,6 @@ function loadnavs(){
     baner.appendChild(navbar)
     document.getElementsByClassName('everything')[0].prepend(baner)
 }
-
-function fivehundreddihhs() {
-    const d = document.createElement('div')
-    d.innerHTML = ``
- }
 
  function ahahah() {
     const stewie = document.createElement('video')
