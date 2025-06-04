@@ -39,7 +39,6 @@ function repeattextalot(txt,txtwidth) {
 
 
 function loadnavs(){
-    addbigassbar('hello')
 
     //creates the banner image
     var baner = document.createElement("div")
