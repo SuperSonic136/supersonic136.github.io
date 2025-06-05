@@ -41,24 +41,24 @@
 }
 
 body {
-    background: #325aaa; /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    background-image: url("cdn/movinbg.png");
-    will-change:contents;
-    animation: moveit 10s linear infinite;
-    background-repeat: repeat;
-    padding: 0px;
-    margin: 0px;
-    overflow-x: hidden;
-    z-index: 0;
+  background: #325aaa; /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  background-image: url("cdn/movinbg.png");
+  will-change:contents;
+  animation: moveit 10s linear infinite;
+  background-repeat: repeat;
+  padding: 0px;
+  margin: 0px;
+  overflow-x: hidden;
+  z-index: 0;
 }
 
 
 
 .body h1 {
-    font-family:jibgurt;
-    font-weight: bolder;
-    color:#000000;
-    text-align: initial;
+  font-family:jibgurt;
+  font-weight: bolder;
+  color:#000000;
+  text-align: initial;
 }
 
 .body h2 {
@@ -124,7 +124,8 @@ p {
   width: 700px;
   margin-top: -50px;
   text-align: center;
-  border-radius: 40px;
+  border-bottom-right-radius: 40px;
+  border-bottom-left-radius: 40px;
   border-top: 0px solid #cccccc;
   border-bottom: 0px;
   outline: 6px solid #8a8a8a;; 
@@ -397,4 +398,20 @@ p {
 @keyframes marquee {
   0%   { transform: translate(0, 0); }
   100% { transform: translate(-100%, 0); }
+}
+
+.retro2000sglass {
+  display: grid;
+  place-items: center;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 30px;
+  width: 200px;
+  border: 3px solid rgba(141, 156, 204, 0.562);
+  background-color: #ffffff2a;
+  backdrop-filter: blur(3px);
+  padding: 2px;
+  text-align: center;
+  color: #ffffff94;
 }
