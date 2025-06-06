@@ -87,18 +87,15 @@ body {
   text-align: initial;
 }
 
-p {
-  font-family:jibgurt;
-  color: light-dark(var(--light-text),var(--dark-text));
-}
 
-.body p {
+p {
   font-size:20px;
   font-family:jibgurt;
   text-align: justify;
+  color: light-dark(var(--light-text),var(--dark-text));
 }
 
-.body a {
+a {
     color: light-dark(var(--light-select),var(--dark-select));
     font-size:20px;
     font-family:jibgurt;
@@ -107,7 +104,7 @@ p {
     font-weight: bold;
 }
 
-.body a:hover {
+a:hover {
   text-decoration: underline;
   color:light-dark(var(--light-select-hover),var(--dark-select-hover));
 }
@@ -193,6 +190,7 @@ p {
   padding-right: 45px;
   text-align: center;
   border-radius: 2px;
+  font-weight: normal;
 }
 
 .navbar a:hover{
@@ -389,8 +387,8 @@ p {
 .headerbar {
   overflow: hidden;
   margin: auto;
-  background-color: rgb(255, 235, 56);
-  outline: 4px solid rgb(83, 50, 0);
+  background-color: light-dark(rgb(255, 235, 56),rgb(141, 95, 27));
+  outline: 4px solid light-dark(rgb(83, 50, 0),rgb(59, 29, 0));
   z-index: 10;
 }
 .headertext {
@@ -453,6 +451,7 @@ p {
 .themetoggle img {
   width: 80%;
   height: auto;
+  image-rendering: crisp-edges;
 }
 
 #themetoggle {

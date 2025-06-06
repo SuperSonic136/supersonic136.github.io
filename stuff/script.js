@@ -90,6 +90,7 @@ function adddarkmodetoggle() {
 }
 
 function loadnavs(){
+
     //check dark mode
     adddarkmodetoggle()
 
