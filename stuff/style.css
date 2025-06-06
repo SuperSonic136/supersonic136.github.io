@@ -451,7 +451,13 @@ a:hover {
 .themetoggle img {
   width: 80%;
   height: auto;
+  transform-origin: center;
   image-rendering: crisp-edges;
+}
+
+.themetoggle img:hover {
+  filter: brightness(110%);
+  transform: scale(120%);
 }
 
 #themetoggle {
