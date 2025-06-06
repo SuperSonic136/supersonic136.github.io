@@ -36,7 +36,6 @@ function repeattextalot(txt,txtwidth) {
     return t
 }
 
-
 function adddarkmodetoggle() {
     var themelist = ['dark',"light"]
 
