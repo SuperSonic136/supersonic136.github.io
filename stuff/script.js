@@ -11,7 +11,7 @@ const navlinks = [
 ];
 
 function addbigassbar(text) {
-    var r = document.querySelector(':root')
+    
 
     var bar = document.createElement('div')
     bar.className = 'headerbar'
@@ -37,6 +37,29 @@ function repeattextalot(txt,txtwidth) {
 }
 
 
+function adddarkmodetoggle() {
+    var themelist = ['dark',"light"]
+
+    var click = document.createElement('label')
+    click.className = "themetoggle"
+    var input = document.createElement('input')
+    input.id = "themetoggle"
+    input.type = "checkbox"
+    click.append(input)
+
+    var img = document.createElement('img')
+
+    var clicked = input.checked ? 1:0
+    img.src = "/stuff/cdn/ico_"+themelist[clicked]+".png"
+    input.onclick = function() {
+        var clicked = input.checked ? 1:0
+        img.src = "/stuff/cdn/ico_"+themelist[clicked]+".png"
+        document.body.style.colorScheme = themelist[clicked]
+    }
+
+    click.append(img)
+    document.body.getElementsByClassName('everything')[0].append(click)
+}
 
 function loadnavs(){
     //creates the banner image
@@ -67,12 +90,16 @@ function loadnavs(){
     navbar.append(navitems)
     baner.appendChild(navbar)
     document.getElementsByClassName('everything')[0].prepend(baner)
+
+    // add dark mode toggle
+    adddarkmodetoggle()
 }
 
  function ahahah() {
     const stewie = document.createElement('video')
     stewie.setAttribute('loop','true')
     stewie.setAttribute('autoplay','true')
+    stewie.setAttribute('showcontext','true')
     stewie.play()
     stewie.src = "/stuff/cdn/sewie.mp4"
     stewie.width = 350
@@ -86,7 +113,7 @@ function getcats(){
     console.log(link)
     a = document.createElement('img')
     a.src = link
-    a.style = "width: 45%; height: auto; text-align: left; border-radius: 10px;"
+    a.style = "width: 45%; height: auto; text-align: left; border-radius: 10px; outline: 3px solid light-dark(var(--light-text),var(--dark-text));"
     document.getElementsByClassName('body')[0].append(a)
 }
 //getElementById('navitem')
@@ -113,7 +140,7 @@ function addswf(swf,date){
         const d = document.createElement("p")
         d.textContent = "Uploaded "+date
         d.id = 'littledate'+id
-        d.style = "color:rgb(80, 80, 80); font-size: smaller; font-style: italic; padding-left: 7px;"
+        d.style = "color:light-dark(rgb(80, 80, 80),rgb(177, 177, 177)); font-size: smaller; font-style: italic; padding-left: 7px;"
         document.getElementById("indentdih"+id).append(d)
     }else{
         document.getElementById(swfid).remove()
