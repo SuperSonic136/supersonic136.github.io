@@ -389,6 +389,8 @@ a:hover {
 }
 
 .headerbar {
+  position: sticky;
+  top: 0;
   overflow: hidden;
   margin: auto;
   background-color: light-dark(rgb(255, 235, 56),rgb(141, 95, 27));

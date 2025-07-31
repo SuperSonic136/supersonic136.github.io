@@ -113,6 +113,7 @@ function adddarkmodetoggle() {
 
 function loadnavs(){
 
+    //addbigassbar("FUCK YOU")
     //check dark mode
     adddarkmodetoggle()
 
