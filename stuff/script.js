@@ -1,14 +1,37 @@
 const navstuffs = [
     'Home',
-    'Links',
     'My Stuff',
 ];  
 
 const navlinks = [
     "/",
-    "/socials",
     "/mywork",
 ];
+
+let socials 
+async function socialsjson(){
+    var response = await fetch('/stuff/socials.json')
+    socials = await response.json()
+    socials = JSON.parse(JSON.stringify(socials))
+
+    var sociallinks = document.createElement('div')
+    sociallinks.className = "socialbar"
+
+    for (var s = 0; s < Object.keys(socials).length; s++){
+        var names = Object.getOwnPropertyNames(socials);
+        var currentname = names[s]
+        var button = document.createElement("a");
+        button.href = socials[currentname];
+        var img = document.createElement("img");
+        img.src = "/stuff/cdn/icons/"+ names[s].replaceAll(".","")+".webp";
+        button.append(img);
+        sociallinks.append(button);
+        console.log("hi");
+    }
+    document.getElementsByClassName("everything")[0].append(sociallinks)
+}
+socialsjson()
+
 
 function setCookie(name,value,days) {
     var expires = "";
@@ -34,7 +57,6 @@ function eraseCookie(name) {
 }
 
 function addbigassbar(text) {
-    
 
     var bar = document.createElement('div')
     bar.className = 'headerbar'
@@ -72,9 +94,9 @@ function adddarkmodetoggle() {
 
     var clicked = input.checked ? 1:0
     if (getCookie('theme') == null) {
-        img.src = "/stuff/cdn/ico_"+themelist[clicked]+".png"
+        img.src = "/stuff/cdn/ico_"+themelist[clicked]+".webp"
     }else {
-        img.src = "/stuff/cdn/ico_"+getCookie('theme')+".png"
+        img.src = "/stuff/cdn/ico_"+getCookie('theme')+".webp"
         document.body.style.colorScheme = getCookie('theme')
     }
 
@@ -122,9 +144,8 @@ function loadnavs(){
     navbar.append(navitems)
     baner.appendChild(navbar)
     document.getElementsByClassName('everything')[0].prepend(baner)
-
-    // add dark mode toggle
     
+
 }
 
  function ahahah() {
@@ -192,7 +213,7 @@ class vanillologo extends HTMLElement {
     }
     // Element functionality written in here
     connectedCallback() {
-        this.innerHTML = `<a target="_blank" rel="noopener noreferrer" href="`+this.getAttribute("data-link")+`" class="ytlogo"><img style="width: 25px;" src="/stuff/cdn/vanillo.svg" alt="Vanillo Version"></a>`
+        this.innerHTML = `<a target="_blank" rel="noopener noreferrer" href="`+this.getAttribute("data-link")+`" class="ytlogo"><img style="width: 35px;" src="/stuff/cdn/icons/vanillo.svg" alt="Vanillo Version"></a>`
     
     }
   }
@@ -205,7 +226,7 @@ class ytlogo extends HTMLElement {
     }
     // Element functionality written in here
     connectedCallback() {
-        this.innerHTML = `<a target="_blank" rel="noopener noreferrer" href="`+this.getAttribute("data-link")+`" class="ytlogo"><img style="width: 35px" src="/stuff/cdn/youtube.png" alt="Youtube Version"></a>`
+        this.innerHTML = `<a target="_blank" rel="noopener noreferrer" href="`+this.getAttribute("data-link")+`" class="ytlogo"><img style="width: 35px" src="/stuff/cdn/icons/youtube.png" alt="Youtube Version"></a>`
     
     }
   }
