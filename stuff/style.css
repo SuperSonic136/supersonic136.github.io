@@ -455,7 +455,7 @@ a:hover {
 }
 
 .themetoggle img {
-  width: 80%;
+  width: 1fr;
   height: auto;
   transform-origin: center;
   image-rendering: crisp-edges;

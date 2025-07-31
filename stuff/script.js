@@ -119,7 +119,7 @@ function adddarkmodetoggle() {
     }
 
     click.append(img)
-    document.body.getElementsByClassName('everything')[0].append(click)
+    document.body.append(click)
 }
 
 function loadnavs(){
@@ -133,7 +133,7 @@ function loadnavs(){
     var baner = document.createElement("div")
     baner.className = "baner"
     var realnoscambanner = document.createElement('img')
-    realnoscambanner.src = "/stuff/cdn/banner.svg"
+    realnoscambanner.src = "/stuff/cdn/banner.webp"
     realnoscambanner.className = "banner"
 
     //create navbar
