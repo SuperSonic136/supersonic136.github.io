@@ -8,6 +8,17 @@ const navlinks = [
     "/mywork",
 ];
 
+function titleCase(str) {
+    var splitStr = str.toLowerCase().split(' ');
+    for (var i = 0; i < splitStr.length; i++) {
+        // You do not need to check if i is larger than splitStr length, as your for does that for you
+        // Assign it back to the array
+        splitStr[i] = splitStr[i].charAt(0).toUpperCase() + splitStr[i].substring(1);     
+    }
+    // Directly return the joined string
+    return splitStr.join(' '); 
+ }
+
 let socials 
 async function socialsjson(){
     var response = await fetch('/stuff/socials.json')
@@ -23,10 +34,10 @@ async function socialsjson(){
         var button = document.createElement("a");
         button.href = socials[currentname];
         var img = document.createElement("img");
-        img.src = "/stuff/cdn/icons/"+ names[s].replaceAll(".","")+".webp";
+        img.src = "/stuff/cdn/icons/"+ currentname.replaceAll(".","").replaceAll(" ","")+".webp";
         button.append(img);
+        button.title = titleCase(currentname).replaceAll(" ","")
         sociallinks.append(button);
-        console.log("hi");
     }
     document.getElementsByClassName("everything")[0].append(sociallinks)
 }
@@ -114,6 +125,7 @@ function adddarkmodetoggle() {
 function loadnavs(){
 
     //addbigassbar("FUCK YOU")
+    
     //check dark mode
     adddarkmodetoggle()
 
@@ -167,7 +179,7 @@ function getcats(){
     console.log(link)
     a = document.createElement('img')
     a.src = link
-    a.style = "width: 45%; height: auto; text-align: left; border-radius: 10px; outline: 3px solid light-dark(var(--light-text),var(--dark-text));"
+    a.style = "width: 39%; height: auto; text-align: left; border-radius: 10px; outline: 3px solid light-dark(var(--light-text),var(--dark-text));"
     document.getElementsByClassName('body')[0].append(a)
 }
 //getElementById('navitem')
@@ -214,7 +226,7 @@ class vanillologo extends HTMLElement {
     }
     // Element functionality written in here
     connectedCallback() {
-        this.innerHTML = `<a target="_blank" rel="noopener noreferrer" href="`+this.getAttribute("data-link")+`" class="ytlogo"><img style="width: 35px;" src="/stuff/cdn/icons/vanillo.svg" alt="Vanillo Version"></a>`
+        this.innerHTML = `<a target="_blank" rel="noopener noreferrer" href="`+this.getAttribute("data-link")+`" class="ytlogo"><img style="width: 30px;" src="/stuff/cdn/icons/vanillo.svg" alt="Vanillo Version"></a>`
     
     }
   }
@@ -233,3 +245,4 @@ class ytlogo extends HTMLElement {
   }
   
 customElements.define("yt-logo", ytlogo);
+

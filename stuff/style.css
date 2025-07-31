@@ -472,6 +472,7 @@ a:hover {
 
 .socialbar{
   background-color: light-dark(var(--light-social-bar),var(--dark-social-bar));
+  backdrop-filter:blur(4px);
   margin-top: 20px;
   padding: 10px;
   border-radius: 10px;
