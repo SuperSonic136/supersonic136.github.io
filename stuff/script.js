@@ -1,12 +1,7 @@
-const navstuffs = [
-    'Home',
-    'My Stuff',
-];  
-
-const navlinks = [
-    "/",
-    "/mywork",
-];
+const navinfo = {
+    'home': "/",
+    'my stuff': "/mywork"
+};  
 
 function titleCase(str) {
     var splitStr = str.toLowerCase().split(' ');
@@ -41,7 +36,7 @@ async function socialsjson(){
     }
     document.getElementsByClassName("everything")[0].append(sociallinks)
 }
-socialsjson()
+
 
 
 function setCookie(name,value,days) {
@@ -98,7 +93,7 @@ function adddarkmodetoggle() {
     var click = document.createElement('label')
     click.className = "themetoggle"
     var input = document.createElement('input')
-    input.id = "themetoggle"
+    input.style = "display: none;"
     input.type = "checkbox"
     click.append(input)
     var img = document.createElement('img')
@@ -123,9 +118,9 @@ function adddarkmodetoggle() {
 }
 
 function loadnavs(){
-    
+
     //addbigassbar("FUCK YOU")
-    
+
     //check dark mode
     adddarkmodetoggle()
 
@@ -143,10 +138,12 @@ function loadnavs(){
     navitems.id = "navitem"
 
     //create navitems
-    for (i in navstuffs){
+    for (let i = 0; i < Object.keys(navinfo).length; i++){
+        var names = Object.getOwnPropertyNames(navinfo);
+        var name = names[i]
         const newnavthing = document.createElement('a');
-        newnavthing.href = navlinks[i];
-        newnavthing.textContent = navstuffs[i];
+        newnavthing.href = navinfo[name];
+        newnavthing.textContent = titleCase(name);
         listitem = document.createElement('li');
         listitem.appendChild(newnavthing);
         navitems.append(listitem);
@@ -157,8 +154,7 @@ function loadnavs(){
     navbar.append(navitems)
     baner.appendChild(navbar)
     document.getElementsByClassName('everything')[0].prepend(baner)
-    
-
+    socialsjson()
 }
 
  function ahahah() {
@@ -179,7 +175,7 @@ function getcats(){
     console.log(link)
     a = document.createElement('img')
     a.src = link
-    a.style = "width: 39%; height: auto; text-align: left; border-radius: 10px; outline: 3px solid light-dark(var(--light-text),var(--dark-text));"
+    a.style = "width: 270px; height: auto; text-align: left; border-radius: 10px; outline: 3px solid light-dark(var(--light-text),var(--dark-text));"
     document.getElementsByClassName('body')[0].append(a)
 }
 //getElementById('navitem')

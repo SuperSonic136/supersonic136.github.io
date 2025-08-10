@@ -97,13 +97,13 @@ p {
 }
 
 a {
-    color: light-dark(var(--light-select),var(--dark-select));
-    font-size:20px;
-    font-family:jibgurt;
-    z-index: 10;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color .1s linear;
+  color: light-dark(var(--light-select),var(--dark-select));
+  font-size:20px;
+  font-family:jibgurt;
+  z-index: 10;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color .1s linear;
 }
 
 a:hover {
@@ -149,7 +149,6 @@ a:hover {
   padding: 30px;
   padding-bottom: 40px;
   background-color: light-dark(var(--light-body),var(--dark-body));
-  
   height: max-content;
   z-index: 1;
 }
@@ -158,8 +157,9 @@ a:hover {
   position: relative;
   margin-top: -25px;
   z-index: 4;
+  
   top: 0;
-  width: 960px;
+  width: 800px;
 }
 
 .navbar ul{
@@ -170,8 +170,6 @@ a:hover {
   padding: -10px;
   overflow: hidden;
   height: 43px;
-  margin-left: 80px;
-  margin-right: 80px;
   display:flex;
   justify-content: safe center;
   overflow-x: auto;
@@ -202,21 +200,18 @@ a:hover {
 }
 
 .navbar li{
-  float: left;
+
   padding-bottom: 0px;
   padding: auto;
 }
 
 .navbar ul li {
   display: flex;
-
 }
 
 .banner {
   position: relative;
   z-index: 5;
-
-  display: block;
 }
 
 .hand {
@@ -465,10 +460,6 @@ a:hover {
   transform: scale(120%);
 }
 
-#themetoggle {
-  display: none;
-}
-
 .socialbar{
   background-color: light-dark(var(--light-social-bar),var(--dark-social-bar));
   backdrop-filter: blur(4px);
@@ -476,10 +467,17 @@ a:hover {
   padding: 10px;
   border-radius: 10px;
   display: flex;
+  justify-content: safe center;
   gap: 10px;
+  width: 452px;
+  overflow-x: overlay;
+  scrollbar-width: thin;
 }
 
 .socialbar a:hover{
   filter: brightness(150%);
+}
 
+.socialbar a:active{
+  filter: brightness(70%);
 }
