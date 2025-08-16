@@ -1,6 +1,6 @@
 const navinfo = {
     'home': "/",
-    'my stuff': "/mywork"
+    'my stuff': "/mywork",
 };  
 
 function titleCase(str) {

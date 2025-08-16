@@ -469,7 +469,7 @@ a:hover {
   display: flex;
   justify-content: safe center;
   gap: 10px;
-  width: 452px;
+  max-width: 700px;
   overflow-x: overlay;
   scrollbar-width: thin;
 }
@@ -480,4 +480,33 @@ a:hover {
 
 .socialbar a:active{
   filter: brightness(70%);
+}
+
+details{
+  text-align: left;
+  font-size: 23px;
+}
+
+details div{
+  margin: 10px;
+  margin-left: 25px;
+  background-color: rgb(173, 173, 173);
+  border-radius: 20px;
+  min-width: 400px;
+  padding: 10px
+}
+
+details img{
+  border-radius: 10px;
+}
+
+.cat {
+  width: 270px; height: auto; text-align: left; border-radius: 10px; outline: 3px solid light-dark(var(--light-text),var(--dark-text));
+}
+
+.indentdate{
+  color: light-dark(rgb(80, 80, 80),rgb(177, 177, 177)); 
+  font-size: smaller; 
+  font-style: italic; 
+  padding-left: 7px;
 }
