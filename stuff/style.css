@@ -5,6 +5,11 @@
 }
 
 @font-face {
+  font-family:impact_font ; /* Name your font family */
+  src: url('fonts/impact/impact.ttf') format('truetype'); /* Locate the .ttf file within your directory*/
+}
+
+@font-face {
     font-family:oldtwitter ; /* Name your font family */
     src: url('fonts/oldtwitter/pico.ttf') format('truetype'); /* Locate the .ttf file within your directory*/
 }
@@ -181,7 +186,7 @@ a:hover {
 
 .navbar a{
   color: #e0e0e0;
-  font-family: 'Impact';
+  font-family: 'impact_font';
   text-decoration: none;
   display: block;
   font-size: 27px;
@@ -472,6 +477,10 @@ a:hover {
   max-width: 700px;
   overflow-x: overlay;
   scrollbar-width: thin;
+}
+
+.socialbar a{
+  transition: color .2s linear;
 }
 
 .socialbar a:hover{
