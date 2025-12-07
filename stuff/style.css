@@ -41,6 +41,7 @@
   --light-select: #a53a3a;
   --light-select-hover: #db5f5f;
   --light-social-bar: #cccccc86;
+  --light-anim:#bbbbbb;
 
   --dark-bg: #1a2764;
   --dark-text: #ffffff;
@@ -50,6 +51,7 @@
   --dark-select: #812727;
   --dark-select-hover: #a13434;
   --dark-social-bar: #aaaaaa86;
+  --dark-anim:#929292;
 }
 
 .everything {
@@ -58,7 +60,6 @@
   width: min-content;
   display: grid;
   place-items: center; /* center everything... yes */
-  
 }
 
 .baner {
@@ -76,7 +77,6 @@ body {
   padding: 0px;
   margin: 0px;
   overflow-x: hidden;
-  z-index: 0;
 }
 
 .body h1 {
@@ -259,7 +259,10 @@ a:hover {
 
 .videolink {
   text-align: left;
-  padding-top: 20px;
+  padding: 10px;
+  background-color: light-dark(var(--light-anim),var(--dark-anim));
+  margin: 5px;
+  border-radius: 10px;
 }
 
 #thisisonlyforblips {

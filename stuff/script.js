@@ -184,6 +184,7 @@ function getcats(){
 function addswf(swf,date){
     var id = swf.split('.')[0]
     var swfid = 'swfcontainer_' + id
+    var swflink = '/stuff/cdn/anims/' + swf
     if (document.getElementById(swfid) == null){
         const anotherfuckingdiv = document.createElement('div')
         anotherfuckingdiv.style = "padding-left: 30px;"
@@ -191,7 +192,7 @@ function addswf(swf,date){
         const swffile = document.createElement('video')
         swffile.id = swfid
         swffile.className = 'swfanim'
-        swffile.src = '/stuff/cdn/anims/' + swf
+        swffile.src = swflink
         swffile.width = 427
         swffile.height = 240
         swffile.volume = 0.2
@@ -222,7 +223,7 @@ class vanillologo extends HTMLElement {
     }
     // Element functionality written in here
     connectedCallback() {
-        this.innerHTML = `<a target="_blank" rel="noopener noreferrer" href="`+this.getAttribute("data-link")+`" class="ytlogo"><img style="width: 30px;" src="/stuff/cdn/icons/vanillo.svg" alt="Vanillo Version"></a>`
+        this.innerHTML = `<a target="_blank" rel="noopener noreferrer" href="`+this.getAttribute("data-link")+`" class="ytlogo"><img style="width: 20px;" src="/stuff/cdn/icons/vanillo.svg" alt="Vanillo Version"></a>`
     
     }
   }
