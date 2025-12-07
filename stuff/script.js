@@ -203,7 +203,7 @@ function addswf(swf,date){
         const d = document.createElement("p")
         d.textContent = "Uploaded "+date
         d.id = 'littledate'+id
-        d.style = "color:light-dark(rgb(80, 80, 80),rgb(177, 177, 177)); font-size: smaller; font-style: italic; padding-left: 7px;"
+        d.className = 'littledate'
         document.getElementById("indentdih"+id).append(d)
     }else{
         document.getElementById(swfid).remove()

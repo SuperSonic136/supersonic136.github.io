@@ -516,7 +516,7 @@ details img{
   width: 270px; height: auto; text-align: left; border-radius: 10px; outline: 3px solid light-dark(var(--light-text),var(--dark-text));
 }
 
-.indentdate{
+.littledate{
   color: light-dark(rgb(80, 80, 80),rgb(177, 177, 177)); 
   font-size: smaller; 
   font-style: italic; 
