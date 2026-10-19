@@ -157,19 +157,6 @@ function loadnavs(){
     socialsjson()
 }
 
- function ahahah() {
-    const stewie = document.createElement('video')
-    stewie.setAttribute('loop','true')
-    stewie.setAttribute('autoplay','true')
-    stewie.setAttribute('showcontext','true')
-    stewie.play()
-    stewie.src = "/stuff/cdn/sewie.mp4"
-    stewie.width = 350
-    
-    document.body.append(stewie)
-    
- }
-
 function getcats(){
     link = "/stuff/cdn/funnycats/"+Math.round(Math.random()*7)+".jpg"
     console.log(link)
